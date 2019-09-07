@@ -1,0 +1,23 @@
+@media (max-width: 600px){
+    body{
+        background-color: yellow;
+    }
+
+    .products{
+        flex-direction: column;
+        /* display: inherit; */
+        height: auto;
+        max-height: 100vh;
+
+    }
+
+
+    .product{
+        margin-top: auto;
+    }
+
+    .description_products{
+        flex-direction: column;
+        height: auto;
+    }
+}

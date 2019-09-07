@@ -96,3 +96,37 @@ nav li a:hover{
 .main_button:hover{
     background-color: #5e9e22;
 }
+
+.description_products{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 50vh;
+    
+
+}
+
+.content_desc{
+    
+    padding: 20px;
+    width: 250px
+
+
+}
+
+
+
+footer{
+    display: flex;
+    background-color: var(--dark-color);
+    justify-content: space-between;
+    align-items: center;
+    height: 30px;
+    padding: 10px
+}
+
+footer a{
+    text-decoration: none;
+    color: white
+}
