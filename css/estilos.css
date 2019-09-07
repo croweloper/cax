@@ -1,14 +1,33 @@
+/* variables */
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+:root{
+--green-color:#7Acc2d;
+--white-color:#FFFFFF;
+--dark-color:#313337;
+/* espaciado */
+--space:10px;
+/* tipografia */
+--normal:12px;
+/*box shadow*/
+--box: 0 0 2px #c1bcbc;
+
+}
+
+/* variables */
+
 body{
     margin: 0;
     padding: 0;
-    font-size: 12px;
-    font-family: Helvetica, sans-serif
+    font-size: var(--normal);
+    /* font-family: Helvetica, sans-serif */
+    font-family: 'Open Sans', sans-serif;
 }
 
 nav{
     display: flex;
-    background-color: #7Acc2d;
-    padding: 10px;
+    background-color: var(--green-color);
+    padding: var(--space);
     color: black;
     justify-content: space-between;
     align-items: center
@@ -20,16 +39,60 @@ nav ul{
 }
 
 nav li{
-    padding-left: 10px;
+    padding-left: var(--space);
     list-style: none; 
 }
 
 nav li a{
     text-decoration: none;
-    color: black;
+    color: var(--dark-color);
 }
 
 nav li a:hover{
     text-decoration: underline;
-    color: white;
+    color: var(--white-color);
+}
+
+.main_section{
+    padding: 15%;
+    text-align: center;
+}
+
+.products{
+    background-image: url("../images/curve.png");
+    max-height: 50px;
+    background-size: cover;
+    background-position: center top;
+    padding: 20%;
+    display: flex;
+}
+
+.product{
+    padding: var(--space);
+    margin-top: -240px
+}
+
+.product .content{
+    background-color: var(--white-color);
+    padding: var(--space);
+    box-shadow:var(--box);
+}
+
+.image_content{
+    text-align: center
+}
+
+.main_button{
+    background-color: var(--green-color);
+    width: 100%;
+    padding: var(--space);
+    font-size: var(--normal);
+    color: var(--white-color);
+    border: 0;
+    cursor: pointer;
+    border-radius: 2px;
+}
+
+.main_button:hover{
+    background-color: #5e9e22;
 }
