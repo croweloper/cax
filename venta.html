@@ -40,14 +40,16 @@
                     </div>
         </div>
         <div class="formulario">
-            <form action="" class="form_formulario">
-                <label for="">Nombre</label>
-                <input class="input" type="text">
-                <label for="">Mail</label>
-                <input class="input" type="text">
-                <label for="">Telefono</label>
-                <input class="input" type="text">
-                <button class="main_button">Confirmar Pago</button>
+            <form method="POST" action="https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=DG34VP42A8EUA" class="form_formulario">
+            <!-- <form method="POST" action="https://www.mercadopago.com/mpe/checkout/start?pref_id=157772874-e442f5e3-ea2a-4e69-817a-cc2fe4348606" class="form_formulario"> -->
+                <label for="name">Nombre</label>
+                <input class="input" type="text" name="name">
+                <label for="email">Mail</label>
+                <input class="input" type="text" name="email">
+                <label for="phone">Telefono</label>
+                <input class="input" type="text" name="phone">
+                <button type="submit" class="main_button" >Confirmar Pago</button>
+
             </form>
         </div>
 

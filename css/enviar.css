@@ -6,25 +6,6 @@
     grid-gap: 10px;
     min-height: calc(100vh - 100px);
 }
-.productleft {
-    grid-column-start: 1;
-    grid-column-end: 2
-}
-
-.descripcionright{
-    grid-column-start: 2;
-    grid-column-end: 5
-}
-
-.productright {
-    grid-column-start: 4;
-    grid-column-end: 5
-}
-
-.descripcionleft{
-    grid-column-start: 1;
-    grid-column-end: 3
-}
 
 .producto{
     grid-column-start:2 ;
